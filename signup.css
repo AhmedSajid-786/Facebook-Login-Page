@@ -1,0 +1,285 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background:url(001.jpeg) no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+input {
+    font-size: 3vh;
+}
+
+
+.container {
+    height: 80vh;
+    width: 150vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    z-index: 99;
+    margin: 10vh 15vh;
+}
+
+
+.h1 {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2vh 0 0 0;
+}
+.h1 h1 {
+    font-size: 6vh;
+    margin-top: 3vh;
+    
+}
+.h1 p {
+    margin-top: 2vh;
+}
+.name {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    margin-top: 4vh;
+    justify-content: center;
+    align-items: center;
+}
+.name input {
+    height: 3vh;
+    width: 65vh;
+    margin: 2vh;
+    border-radius: 4vh;
+    padding: 1vh 4vh;
+    background-color: transparent;
+    border: 0.5px solid grey;
+}
+
+input::placeholder {
+    color: rgb(211, 211, 211);
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid red;
+}
+
+.email {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.email input {
+    height: 3vh;
+    width: 65vh;
+    border-radius: 4vh;
+    padding: 1vh 4vh;
+    margin: 2vh;
+    background-color: transparent;
+    border: 0.5px solid grey;
+}
+
+.email input:focus {
+    outline: none;
+    border: 1px solid red;
+}
+.birth {
+    height: 10vh;
+    width: 100%;
+    margin: 2vh 0 2vh 3vh;
+}
+.info {
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.birth {
+    width: 75vh;
+}
+
+.birth p {
+    font-size: 3vh;
+    margin-bottom: 2vh;
+}
+
+select {
+    background-color: transparent; 
+    color: rgb(255, 255, 255);
+    border: 1px solid #ffffff;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+select:focus {
+    outline: none;
+    border-color: #ff0000;
+}
+
+option {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+}
+
+.gender-container {
+    height: 10vh;
+    margin: 4vh 0 2vh 3vh;
+    width: 75vh;
+}
+.gender-options {
+    margin-top: 2vh;
+}
+
+.gender-option {
+    margin-left: 2vh;
+    cursor: pointer;
+}
+
+.para {
+    height: 5vh;
+    width: 100%;
+}
+.para p {
+    margin: 2vh 0 2vh 3vh;
+}
+
+.para1 p {
+    margin: 2vh 0 2vh 3vh;
+}
+
+.para1{
+    height: 5vh;
+    width: 100%;
+}
+.button {
+    height: 4vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button button {
+    height: 8vh;
+    width: 35vh;
+    margin-top: 15vh;
+    border: 2px solid red;
+    background-color: transparent;
+    color: red;
+    font-size: 3vh;
+    border-radius: 4vh;
+    transition: 0.25s ease-in-out;
+}
+
+.button button:hover {
+    border: none;
+    background-color: red;
+    color: white;
+    width: 45vh;
+}
+
+.button button:active {
+    background-color: white;
+    color: red;
+}
+ p {
+    font-size: 3vh;
+ }
+
+ option {
+    font-size: 3vh;
+ }
+
+ label {
+    font-size: 3vh;
+ }
+
+
+ @media (max-width:750px) {
+    .container {
+        width: 100vh;
+    }
+
+    input {
+        font-size: 2vh;
+    }
+
+    p {
+        font-size: 2.5vh;
+    }
+
+    .button button {
+        height: 5vh;
+        width: 25vh;
+    }
+ }
+
+
+ 
+ @media (max-width:500px) {
+    .container {
+        width: 70vh;
+    }
+
+    .name {
+        display: block;
+    }
+    .name input {
+        width: 40vh;
+    }
+
+    .email {
+        display: block;
+        margin-top: 6vh;
+    }
+
+    .email input {
+        width: 40vh;
+    }
+
+    input {
+        font-size: 2vh;
+    }
+
+    p {
+        display: none;
+    }
+
+    .birth {
+        margin-top: 8vh;
+    }
+    .gender-container {
+        margin-top: -4vh;
+    }
+    .info {
+        display: block;
+        margin: 1vh;
+    }
+
+    .button button {
+        height: 5vh;
+        width: 25vh;
+        margin-top: -5vh;
+    }
+
+   
+ }
+

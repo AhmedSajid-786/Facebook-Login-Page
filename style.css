@@ -1,0 +1,301 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background:url(001.jpeg) no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+.container {
+    height: 70vh;
+    width: 150vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    z-index: 99;
+    margin: 15vh 15vh;
+}
+.left {
+    height: 100%;
+    width: 75vh;
+    margin: 40vh 10vh 10vh 10vh;
+}
+
+.left img {
+    height: 12vh;
+}
+.left p {
+    font-size: 4vh;
+    line-height: 2rem;
+    margin-top: 4vh;
+}
+
+.right {
+    height: 100%;
+    width: 75vh;
+}
+
+.email {
+    margin: 10vh 7vh 5vh 4vh;
+}
+
+.email input {
+    background-color: transparent;
+    height: 3vh;
+    width: 60vh;
+    border: 0.5px solid grey;
+    color: white;
+    border-radius: 2.5vh;
+    padding: 2vh 3vh;
+    font-size: 3vh;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid red;
+}
+
+.password {
+    margin: 5vh 7vh 5vh 4vh;
+}
+.password input:focus {
+    outline: none;
+    border: 1px solid red;
+}
+
+input::placeholder {
+    color: rgb(197, 197, 197);
+}
+
+.password input{
+    background-color: transparent;
+    height: 3vh;
+    width: 60vh;
+    border: 0.5px solid grey;
+    color: white;
+    border-radius: 2.5vh;
+    padding: 2vh 3vh;
+    font-size: 3vh;
+}
+
+
+
+.loginb {
+    height: 6vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8vh;
+}
+
+.loginb button {
+    height: 8vh;
+    width: 40vh;
+    background-color: transparent;
+    border: 2px solid red;
+    color: red;
+    font-size: 3vh;
+    border-radius: 4vh;
+    cursor: pointer;
+    transition: 0.25s ease-in-out;
+}
+
+.loginb button:hover{
+    background-color: red;
+    width: 60vh;
+    border: none;
+    color: white;
+}
+
+.loginb button:active {
+    background-color: white;
+    color: red;
+}
+
+
+.fpass {
+    height: 5vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vh;
+    margin: 4vh 0 3vh 0;
+}
+
+.fpass a {
+    text-decoration: none;
+}
+
+.fpass a:hover {
+    text-decoration: underline;
+}
+
+
+.hr {
+    width: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hr hr {
+    width: 60vh;
+    margin-left: 13vh;
+    border: 0.1vh solid grey;
+}
+
+.createacc {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.createacc button {
+    height: 8vh;
+    width: 35vh;
+    background-color: transparent;
+    margin-top: 2vh;
+    border: none;
+    color: red;
+    font-size: 3vh;
+    border-radius: 5vh;
+    cursor: pointer;
+    transition: 0.25s ease-in-out;
+}
+
+.createacc button:hover {
+    background-color: white;
+    width: 50vh;
+}
+
+.createacc button:active {
+    background-color: rgb(180, 179, 179);
+}
+
+
+
+@media(max-width:750px) {
+   .container{
+    width: 100vh;
+    display: inline;
+    margin: 0vh;
+   }
+   .left {
+    height: 8vh;
+    width: 75vh;
+    margin: 3vh 0 3vh 35vh;
+}
+
+   .left img {
+    height: 8vh;
+   }
+
+   .left p {
+    display: none;
+   }
+
+   body {
+    background: url(001.jpeg) no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+.right {
+    margin: 0vh 0 0 16vh;
+}
+
+.email {
+    margin: 0;
+}
+.password{
+    margin: 2vh 0 0 0;
+}
+.login {
+    margin: 1vh 0 1vh -2vh;
+}
+  
+}
+
+
+@media(max-width:495px) {
+    .container{
+     width: 50vh;
+     display: inline;
+     margin: 0vh 0vh 0vh 40vh;
+    }
+    .left {
+    display: none;
+ }
+ 
+    .left img {
+     height: 8vh;
+    }
+ 
+    .left p {
+     display: none;
+    }
+ 
+    body {
+     background: url(001.jpeg) no-repeat center center fixed;
+     background-size: cover;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 110vh;
+     width: 50vw;
+     font-family: Arial, sans-serif;
+     position: relative;
+ }
+ 
+ .right {
+     margin: 4vh 0 0 2vh;
+ }
+ 
+ .email input {
+     margin: 0;
+     width: 40vh;
+ }
+ .password input{
+     margin: 4vh 0 0 0;
+     width: 40vh;
+ }
+ .loginb button {
+     margin: 1vh 0 1vh -2vh;
+     width: 20vh;
+     margin-left: -33vh;
+ }
+
+ .fpass {
+    margin-left: -14vh;
+ }
+ .hr hr {
+    margin-left: -13vh;
+    width: 40vh;
+ }
+ .createacc button {
+    margin-left: -29vh;
+ }
+   
+ }
